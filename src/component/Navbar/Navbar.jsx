@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BellDot } from "lucide-react";
 import { ChevronDown, User } from "lucide-react";
-
+import myImage from '../../assets/logo.png';
 // This is a functional component called Navbar2
 const Navbar = () => {
   // This state variable is used to keep track of whether the mobile menu is open or not
@@ -25,7 +25,8 @@ const Navbar = () => {
           className="flex items-center space-x-2 rtl:space-x-reverse "
         >
           <img
-            src="../public/images/logo.png"
+            // src="../public/images/logo.png"
+            src={myImage}
             height={20}
             width={25}
             alt="Loqfy Logo"
