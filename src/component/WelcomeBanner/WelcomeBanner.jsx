@@ -8,7 +8,7 @@ const WelcomeBanner = () => {
   const weekday = currentDate.toLocaleString("default", { weekday: "long" });
 
   return (
-    <div className=" mt-2 flex flex-col justify-center items-center bg-white rounded-md shadow-lg text-center w-auto flex-wrap">
+    <div className=" mt-2 flex flex-col justify-center items-center bg-white rounded-md shadow-lg text-center w-auto flex-wrap p-6">
       <p className="text-md font-semibold text-gray-800 p-2 ">
         Welcome back 
         <span className="text-xl font-bold text-blue-500 "> Michael </span>

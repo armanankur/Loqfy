@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white  shadow-md">
+    <nav className="bg-white  shadow-lg">
       <div className="flex flex-wrap items-center justify-around gap-2 max-w-screen-xl mx-auto p-4 w-[100vw]  ">
         <a
           href="https://loqfy.com"
