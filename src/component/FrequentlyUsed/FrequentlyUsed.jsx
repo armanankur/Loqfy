@@ -2,12 +2,12 @@
 
 const FrequentlyUsed = () => {
   return (
-    <div className="shadow-md h-auto p-4 w-full rounded-lg mt-2 flex flex-col justify-center items-start bg-white ">
+    <div className="shadow-md mt-1  w-full  rounded-lg p-6 flex flex-col justify-center items-start bg-white ">
 
-      <p className="text-xl font-semibold ml-4 p-2 ">Frequently Used</p>
+      <p className="text-xl font-semibold ml-2 p-1 ">Frequently Used</p>
 
-    <div className="flex justify-center items-center gap-2 ">
-        <Card title={"Contract Execution Upload"}/>
+    <div className="flex flex-wrap justify-center items-center gap-0 ">
+        <Card title={"Contract Execution Upload"}/> 
         <Card title={"E-Stamp Services"}/>
         <Card title={"E-Sign Services"}/>
     </div>
@@ -19,7 +19,7 @@ export default FrequentlyUsed
 
 const Card = ({title}) => {
     return (
-      <div className="w-1/3 rounded-lg shadow-md p-4 flex-wrap ">
+      <div className="w-full lg:w-1/3 rounded-md shadow-md p-4 flex-wrap ">
 
         <div className="flex flex-col space-y-2 flex-wrap">
 

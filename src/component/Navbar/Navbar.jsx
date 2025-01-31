@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white  shadow-md">
-      <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4 w-auto  ">
+      <div className="flex flex-wrap items-center justify-around gap-2 max-w-screen-xl mx-auto p-4 w-[100vw]  ">
         <a
           href="https://loqfy.com"
           className="flex items-center space-x-2 rtl:space-x-reverse "
@@ -50,8 +50,8 @@ const Navbar = () => {
           </a>
 
           <button className="flex items-center space-x-2 bg-slate-100  text-gray-600  font-medium py-2 px-6 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300">
-            <ChevronDown className="w-4 h-4" />
-            <span className="text-sm">Michael</span>
+            <ChevronDown className="w-4 h-4 hidden xl:block" />
+            <span className="text-sm hidden xl:block">Michael</span>
             <User className="w-5 h-5 text-blue-500" />
           </button>
           <button
@@ -61,7 +61,7 @@ const Navbar = () => {
             aria-controls="mega-menu"
             aria-expanded={isMobileMenuOpen ? "true" : "false"}
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only" >Open main menu</span>
             <svg
               className="w-5 h-5"
               aria-hidden="true"
@@ -85,8 +85,8 @@ const Navbar = () => {
             isMobileMenuOpen ? "block" : "hidden"
           } w-full md:flex md:w-auto md:order-1`}
         >
-          <ul className="flex flex-col items-center text-center justify-center gap-0.5 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse py-2 text-sm text-gray-700">
-            <li>
+          <ul className="flex flex-col items-center text-center justify-center gap-0.5 font-medium md:flex-row space-y-6 lg:space-y-0 md:mt-0 space-x-4 xl:space-x-8 rtl:space-x-reverse py-4 text-sm text-gray-700">
+            <li className="hidden xl:block">
               <div className="relative inline-block text-center">
                 <button
                   onMouseEnter={() => setIsOpen(true)}
@@ -139,7 +139,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <a href="#usermanagement" className="hover:text-gray-500">
+              <a href="#usermanagement" className="hover:text-gray-500 ">
                 User Management
               </a>
             </li>
@@ -174,7 +174,7 @@ const Navbar = () => {
               </a>
             </li>
 
-            <li>
+            <li className="hidden xl:block">
               <a
                 href="#comingsoon"
                 className="text-gray-700 text-xs focus:ring-4 focus:ring-gray-300 font-semibold rounded-lg  px-2 py-4 md:px-5 md:py-2 focus:outline-none"
